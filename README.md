@@ -1,10 +1,6 @@
 # Create a test React client (frontend)
 
-```
-npx create-react-app ../hippercampus_test_fe
-cd client
-npm start
-```
+see: https://github.com/kowaraj/hippercampus_test_fe
 
 # Create Express API (backend)
 
