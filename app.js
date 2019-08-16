@@ -45,7 +45,13 @@ app.post('/upload', function(req, res) {
     if (err) {
       return res.status(500).send(err);
     }
-    res.send('File uploaded to ' + uploadPath);
+
+    // The URL of the client
+    let backURL = req.header('Referer') || '/';
+    console.log(backURL);
+
+    res.redirect(302, 'back');
+    //res.send('File uploaded to ' + uploadPath);
   });
 });
 
